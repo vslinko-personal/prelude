@@ -5,3 +5,6 @@
 (setq js2-include-node-externs t)
 
 (setq prelude-flyspell nil)
+
+(define-key evil-insert-state-map (kbd "<down>") 'evil-next-line)
+(define-key evil-insert-state-map (kbd "<up>") 'evil-previous-line)
