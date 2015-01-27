@@ -6,5 +6,7 @@
 
 (setq prelude-flyspell nil)
 
+(setq company-dabbrev-downcase nil)
+
 (define-key evil-insert-state-map (kbd "<down>") 'evil-next-line)
 (define-key evil-insert-state-map (kbd "<up>") 'evil-previous-line)
