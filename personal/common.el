@@ -7,6 +7,8 @@
 
 (setq company-dabbrev-downcase nil)
 
+(setq ruby-insert-encoding-magic-comment nil)
+
 (setq web-mode-content-types-alist '(("jsx" . "\\.js\\'")))
 (setq web-mode-code-indent-offset 2)
 (setq web-mode-markup-indent-offset 2)
