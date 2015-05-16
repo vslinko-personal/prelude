@@ -14,3 +14,6 @@
 
 (define-key evil-insert-state-map (kbd "<down>") 'evil-next-line)
 (define-key evil-insert-state-map (kbd "<up>") 'evil-previous-line)
+
+(define-key evil-insert-state-map (kbd "M-m") 'emmet-expand-line)
+(define-key evil-insert-state-map (kbd "M-n") 'emmet-next-edit-point)
