@@ -6,7 +6,6 @@
 
 (require 'prelude-css)
 (require 'prelude-emacs-lisp)
-(require 'prelude-js)
 (require 'prelude-org)
 (require 'prelude-shell)
 (require 'prelude-web)
