@@ -36,6 +36,7 @@
         (html2jsx-replace "=\"[ ]+\\(.*\\)\"" "=\"\\1\"")
         (html2jsx-replace "=\"\\(.*\\)[ ]+\"" "=\"\\1\"")
         (html2jsx-replace " className=\"\"" "")
+        (html2jsx-replace " style=\"\"" "")
         (html2jsx-replace " href=\"\"" " href=\"#\"")
         (html2jsx-replace " href=\"#[^\"]+\"" " href=\"#\"")
         (html2jsx-replace "<a href=\"#\" className=\"btn \\(.*?\\)<\/a" "<button className=\"btn \\1</button")))))
