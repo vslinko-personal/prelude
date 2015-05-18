@@ -1,6 +1,6 @@
 (defun html2jsx-replace (from to)
   (let
-    ((any t))
+    ((any t) (case-fold-search nil))
     (while any
       (goto-char (point-min))
       (while (re-search-forward from nil t)
@@ -28,6 +28,7 @@
         (html2jsx-replace "\\(<\\(input\\|img\\|hr\\|br\\)\\)>" "\\1 \/>")
         (html2jsx-replace " class=" " className=")
         (html2jsx-replace " for=" " htmlFor=")
+        (html2jsx-replace " tabindex=" " tabIndex=")
         (html2jsx-replace " id=\"[^\"]*\"" "")
         (html2jsx-replace " data-[-a-zA-Z0-9]+=\"[^\"]*\"" "")
         (html2jsx-replace "\\( \\|\"\\)js-[-_a-zA-Z0-9]+" "\\1")
